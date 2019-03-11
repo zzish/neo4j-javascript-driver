@@ -75,6 +75,7 @@
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
+    "natives": "^1.1.6",
     "text-encoding": "^0.6.4",
     "uri-js": "^4.2.1"
   }

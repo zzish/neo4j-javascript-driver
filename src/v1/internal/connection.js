@@ -268,7 +268,9 @@ export default class Connection {
         try {
           const error = newError(payload.message, payload.code);
           this._currentFailure = this._errorHandler.handleAndTransformError(error, this.hostPort);
-          this._currentObserver.onError( this._currentFailure );
+          if (this._currentObserver) {
+            this._currentObserver.onError( this._currentFailure );
+          }
         } finally {
           this._updateCurrentObserver();
           // Things are now broken. Pending observers will get FAILURE messages routed until we are done handling this failure.
