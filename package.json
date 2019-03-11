@@ -1,5 +1,5 @@
 {
-  "name": "neo4j-driver",
+  "name": "@zzish/neo4j-driver",
   "version": "1.7.1",
   "description": "Connect to Neo4j 3.0.0 and up from JavaScript",
   "author": "Neo4j",
